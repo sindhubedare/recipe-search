@@ -1,8 +1,9 @@
 import React from 'react';
+import Button from './Button';
 
 export default () => {
     return(
-      
+  <React.Fragment>
   <div className="row">
   <form className="col s12">
     <div className="row">
@@ -13,5 +14,9 @@ export default () => {
       </div>
     </form>
   </div>
+  <div className= "submit-button">
+    <Button />
+  </div>
+  </React.Fragment>
     )
 }

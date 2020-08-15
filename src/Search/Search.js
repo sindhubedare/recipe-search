@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import Button from './Button';
-import Searchbar from './Searchbar';
 
 
 export default (setSearchTerm) => {

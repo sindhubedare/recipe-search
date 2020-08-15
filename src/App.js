@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import Header from './Components/Header'
-import Search from './Search/Search';
+import Searchbar from './Search/Searchbar'
 
 function App() {
   return (
     <div className="App">
      <Header />
-     <Search />
+     <Searchbar />
     </div>
   );
 }

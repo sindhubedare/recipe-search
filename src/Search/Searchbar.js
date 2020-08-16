@@ -12,10 +12,13 @@ function Searchbar (){
     //Calling api here
     const getRecipes = async () => {
         //fetch
-     const result = await fetch(`http://www.recipepuppy.com/api/?i=${searchTerm}`, { mode: 'no-cors'} );
-     const data = await result.json;
-     
-     console.log(data);
+        // let response = await fetch("https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3");
+         console.log(searchTerm);
+        let response = await fetch("https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=${searchTerm}&p=3");
+        let data = await response.json();
+        console.log(data);
+        
+
 
     }
 

@@ -79,7 +79,7 @@ class Search extends React.Component {
             const result = data.results;
             const resultLength = data.results.length;
             // console.log("length" , data.results.length);
-            // console.log(result);
+            console.log(result);
 
             //display only 1st item title of the array
             // console.log(data.results[0].title);

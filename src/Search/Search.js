@@ -84,13 +84,9 @@ class Search extends React.Component {
           <div className="card">
             <div className="card-image waves-effect waves-block waves-light">
               <img className="activator" src={result.thumbnail} width="100pt" height="200pt" alt ="Not available"/>
-               {/* <h6>click image for ingredients</h6> */}
-                {/* <h6>{result.title}</h6> */}
              </div>
-            <div className="card-content">
-             <span className="card-title activator grey-text text-darken-4">{result.title}</span>
-               {/* <h5>{result.title}</h5> */}
-           
+            <div className="card-content teal lighten-3">
+             <h4 className="card-title activator">{result.title}</h4>
             </div>
            <div className="card-reveal">
             <span className="card-title grey-text text-darken-4">{result.title}<i className="material-icons right">close</i></span>

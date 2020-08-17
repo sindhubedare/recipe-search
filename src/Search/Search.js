@@ -74,6 +74,10 @@ class Search extends React.Component {
             let response = await fetch(`https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=${searchTerm}&q=omelet&p=1`);
             let data = await response.json();
             console.log(data);
+            console.log(data.results);
+           
+            
+
             
     
     

@@ -75,7 +75,11 @@ class Search extends React.Component {
             let data = await response.json();
             console.log(data);
             console.log(data.results);
-           
+            const result = data.results;
+            const resultLength = data.results.length;
+            console.log("length" , data.results.length);
+            console.log(result);
+
             
 
             

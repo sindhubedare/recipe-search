@@ -26,7 +26,8 @@ function Searchbar (){
     return (
         <div>
             {searchTerm}
-            <Search  setSearchTerm= {setSearchTerm}/>
+            {/* <Search setSearchTerm= {setSearchTerm} /> */}
+            <Search />
             <Result />
         </div>
     )

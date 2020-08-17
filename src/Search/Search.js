@@ -43,6 +43,7 @@
 
 
 import React from 'react';
+// import Error from './Error';
 // import Searchbar from './Searchbar';
 
 class Search extends React.Component {
@@ -82,6 +83,7 @@ class Search extends React.Component {
 
             //display only 1st item title of the array
             // console.log(data.results[0].title);
+            // const errorMessage = response.data.error_message;
 
 
             if(resultLength > 0){
@@ -90,6 +92,18 @@ class Search extends React.Component {
             else{
               this.setState({errorMessage: "No Data"})
             }
+
+            // if(resultLength > 0){
+            //   this.setState({displayResults: result})
+            //   this.setState ({resultLength: false})
+            // }
+            // else{
+            //   this.setState({resultLength: true})
+            // }
+            // catch (error){
+            //   console.log(error.messages)
+            //   this.setState({hasError: error.message})
+            // }
     
         }
     
@@ -130,6 +144,9 @@ class Search extends React.Component {
        })
       }
        </div>
+       {/* <div>
+    {this.state.hasError && (this.state.info == null) && <h3> {this.state.hasError}</h3>}
+       </div> */}
       </React.Fragment>
      )
     }

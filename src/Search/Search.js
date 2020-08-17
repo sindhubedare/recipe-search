@@ -43,7 +43,7 @@
 
 
 import React from 'react';
-import Searchbar from './Searchbar';
+// import Searchbar from './Searchbar';
 
 class Search extends React.Component {
     constructor(props){
@@ -98,24 +98,39 @@ class Search extends React.Component {
    console.log(response);
      return(
          <React.Fragment>
-   <div className="row">
-
-  <form className="col s12" >
-     <div className="row">
-       <div className="input-field col s6">
-         <input placeholder="Ingredient" id="recipe-search" type="text" className="validate" value={this.state.searchText} onChange= {this.onSearch} />
-     {/* onChange={event => setString(event.target.value) */}
+             <div className="row">
+                <form className="col s12" >
+                  <div className="row">
+                    <div className="input-field col s6">
+                       <input placeholder="Ingredient" id="recipe-search" type="text" className="validate" value={this.state.searchText} onChange= {this.onSearch} />
+                          {/* onChange={event => setString(event.target.value) */}
         
-         <label htmlFor="recipe-search">Search for recipe here</label>
-         <button onClick={this.onSubmit}>Submit</button>
-                </div>
+                        <label htmlFor="recipe-search">Search for recipe here</label>
+                        <button onClick={this.onSubmit}>FIND ME Recipe</button>
+                       </div>
+                      </div>
+                 </form>
+              </div>
+          
+       <div>
+       {/* //mapping the results to display on screen */}
+       {response.length && response.map((result, id) => {
+         return (
+           <div className="poster-results">
+            <ul key={id} className= "lists-display">
+             <li className="results-li">
+                <a href = {result.href}>Click link to get recipe</a>
+                {/* <h5> Recipe Name: {result.title}</h5>
+                <h5>Ingredients: {result.ingredients}</h5> */}
+             </li>
+            </ul>
+           </div>
+         )
+       })
+      }
        </div>
-     </form>
-   </div>
-
-  </React.Fragment>
-
+      </React.Fragment>
      )
- }
+    }
 }
 export default Search;

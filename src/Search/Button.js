@@ -3,9 +3,7 @@ import React from 'react'
 export default () => {
     return(
         <div>
-        <button className="btn waves-effect waves-light" type="submit" name="action">Submit
-        <i className="material-icons right">send</i>
-      </button>
+          <button class="btn waves-effect waves-light" type="submit" name="action" onClick={this.onSubmit}>FIND ME Recipe<i class="material-icons right">send</i></button>
       </div>
     )
 }

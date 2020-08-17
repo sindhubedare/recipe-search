@@ -45,6 +45,7 @@
 import React from 'react';
 // import Error from './Error';
 // import Searchbar from './Searchbar';
+// import Button from './Button';
 
 class Search extends React.Component {
     constructor(props){
@@ -120,12 +121,12 @@ class Search extends React.Component {
                           {/* onChange={event => setString(event.target.value) */}
         
                         <label htmlFor="recipe-search">Search for recipe here</label>
-                        <button onClick={this.onSubmit}>FIND ME Recipe</button>
+                        <button class="btn waves-effect waves-light" type="submit" name="action" onClick={this.onSubmit}>FIND ME Recipe<i class="material-icons right">send</i></button>
                        </div>
                       </div>
                  </form>
               </div>
-          
+        
        <div>
        {/* //mapping the results to display on screen */}
        {response.length && response.map((result, id) => {
@@ -134,9 +135,11 @@ class Search extends React.Component {
               {/* <ul key={id} className= "lists-display"> */}
             <ul className= "lists-display">
              <li  className="results-li">
-                <a href = {result.href}>Click link to get recipe</a>
+                
                 <h5> Recipe Name: {result.title}</h5>
+                <img src={result.thumbnail} alt= "Image not available" />
                 <h6>Ingredients: {result.ingredients}</h6>
+                <a href = {result.href}>Click link to get recipe</a>
              </li>
             </ul>
            </div>

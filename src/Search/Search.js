@@ -83,10 +83,13 @@ class Search extends React.Component {
             //display only 1st item title of the array
             console.log(data.results[0].title);
 
-            
 
-            
-    
+            if(resultLength > 0){
+              this.setState({displayResults: result})
+            }
+            else{
+              this.setState({errorMessage: "No Data"})
+            }
     
         }
     

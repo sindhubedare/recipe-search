@@ -117,11 +117,12 @@ class Search extends React.Component {
        {response.length && response.map((result, id) => {
          return (
            <div className="poster-results">
-            <ul key={id} className= "lists-display">
-             <li className="results-li">
+              {/* <ul key={id} className= "lists-display"> */}
+            <ul className= "lists-display">
+             <li  className="results-li">
                 <a href = {result.href}>Click link to get recipe</a>
-                {/* <h5> Recipe Name: {result.title}</h5>
-                <h5>Ingredients: {result.ingredients}</h5> */}
+                <h5> Recipe Name: {result.title}</h5>
+                <h6>Ingredients: {result.ingredients}</h6>
              </li>
             </ul>
            </div>

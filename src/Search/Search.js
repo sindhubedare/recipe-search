@@ -51,7 +51,7 @@ class Search extends React.Component {
                 <form className="col s12" >
                   <div className="row flex">
                     <div className="input-field">
-                       <input placeholder="Ingredient" id="recipe-search" type="text" className="validate" value={this.state.searchText} onChange= {this.onSearch} />
+                       <input placeholder="Add upto 2 ingredients using comma" id="recipe-search" type="text" className="validate" value={this.state.searchText} onChange= {this.onSearch} />
                           {/* onChange={event => setString(event.target.value) */}
         
                         <label className="search">Search for recipe here</label>
@@ -85,14 +85,15 @@ class Search extends React.Component {
             <div className="card-image waves-effect waves-block waves-light">
               <img className="activator" src={result.thumbnail} width="100pt" height="200pt" alt ="Not available"/>
              </div>
-            <div className="card-content teal lighten-3">
+            <div className="card-content teal lighten-3">  
              <h4 className="card-title activator">{result.title}</h4>
             </div>
-           <div className="card-reveal">
-            <span className="card-title grey-text text-darken-4">{result.title}<i className="material-icons right">close</i></span>
+           <div className="card-reveal white-text cyan lighten-3">
+            <span className="card-title red-text "><i className="material-icons right">close</i>{result.title}</span>
               <h5>Ingredients: </h5>
               <h6>{result.ingredients}</h6>
-              <h6><a href={result.href}>Click link to get recipe</a></h6>
+              <br/>
+              <h6><a href={result.href}>"Click here to get recipe"</a></h6>
            </div>
           </div>
           </div>

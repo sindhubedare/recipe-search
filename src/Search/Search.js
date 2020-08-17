@@ -1,4 +1,5 @@
 import React from 'react';
+import Loading from './Loading';
 
 class Search extends React.Component {
     constructor(props){
@@ -64,6 +65,7 @@ class Search extends React.Component {
         
        
       {/* mapping the results to display on screen  */}
+      {<Loading />}
         <div className= "conatiner">
         <div className= "row flex" style={{display: "flex", flexWrap: "wrap"}}>
        {response.length && response.map((result, id) => {

@@ -72,7 +72,7 @@ class Search extends React.Component {
             //  console.log(this.state.searchText);
              const searchTerm = this.state.searchText;
             //  console.log(searchTerm);
-            let response = await fetch(`https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=${searchTerm}&q=omelet&p=1`);
+            let response = await fetch(`https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=${searchTerm}&p=1`);
             let data = await response.json();
             // console.log(data);
             // console.log(data.results);
@@ -157,7 +157,7 @@ class Search extends React.Component {
             </div>
            <div className="card-reveal">
             <span className="card-title grey-text text-darken-4">{result.title}<i className="material-icons right">close</i></span>
-              <p>{result.ingredients}</p>
+              <p>Ingredients: {result.ingredients}</p>
            </div>
           </div>
           </div>

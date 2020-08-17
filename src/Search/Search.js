@@ -69,10 +69,9 @@ class Search extends React.Component {
           }
        getRecipes = async () => {
             //fetch
-            // let response = await fetch("https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3");
-             console.log(this.state.searchText);
+            //  console.log(this.state.searchText);
              const searchTerm = this.state.searchText;
-             console.log(searchTerm);
+            //  console.log(searchTerm);
             let response = await fetch(`https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=${searchTerm}&q=omelet&p=1`);
             let data = await response.json();
             // console.log(data);
@@ -110,7 +109,7 @@ class Search extends React.Component {
     
  render (){
    let response = this.state.displayResults;
-   console.log(response);
+  //  console.log(response);
      return(
          <React.Fragment>
              <div className="row">
@@ -121,7 +120,7 @@ class Search extends React.Component {
                           {/* onChange={event => setString(event.target.value) */}
         
                         <label htmlFor="recipe-search">Search for recipe here</label>
-                        <button class="btn waves-effect waves-light" type="submit" name="action" onClick={this.onSubmit}>FIND ME Recipe<i class="material-icons right">send</i></button>
+                        <button className="btn waves-effect waves-light" type="submit" name="action" onClick={this.onSubmit}>FIND ME Recipe<i className="material-icons right">send</i></button>
                        </div>
                       </div>
                  </form>
@@ -137,7 +136,7 @@ class Search extends React.Component {
              <li  className="results-li">
                 
                 <h5> Recipe Name: {result.title}</h5>
-                <img src={result.thumbnail} alt= "Image not available" />
+                <img src={result.thumbnail} alt= "Not available" />
                 <h6>Ingredients: {result.ingredients}</h6>
                 <a href = {result.href}>Click link to get recipe</a>
              </li>

@@ -1,7 +1,4 @@
 import React from 'react';
-// import Error from './Error';
-// import Searchbar from './Searchbar';
-// import Button from './Button';
 
 class Search extends React.Component {
     constructor(props){
@@ -28,7 +25,7 @@ class Search extends React.Component {
             //  console.log(this.state.searchText);
              const searchTerm = this.state.searchText;
             //  console.log(searchTerm);
-            let response = await fetch(`https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=${searchTerm}&from=1&to=10`);
+            let response = await fetch(`https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=${searchTerm}&p=1`);
             let data = await response.json();
             // console.log(data);
             // console.log(data.results);
@@ -36,30 +33,12 @@ class Search extends React.Component {
             const resultLength = data.results.length;
             // console.log("length" , data.results.length);
             // console.log(result);
-
-            //display only 1st item title of the array
-            // console.log(data.results[0].title);
-            // const errorMessage = response.data.error_message;
-
-
             if(resultLength > 0){
               this.setState({displayResults: result})
             }
             else{
               this.setState({errorMessage: "No Data"})
             }
-
-            // if(resultLength > 0){
-            //   this.setState({displayResults: result})
-            //   this.setState ({resultLength: false})
-            // }
-            // else{
-            //   this.setState({resultLength: true})
-            // }
-            // catch (error){
-            //   console.log(error.messages)
-            //   this.setState({hasError: error.message})
-            // }
     
         }
     
@@ -68,14 +47,14 @@ class Search extends React.Component {
   //  console.log(response);
      return(
          <React.Fragment>
-             <div className="row">
+             <div className="row flex">
                 <form className="col s12" >
-                  <div className="row">
-                    <div className="input-field col s6">
+                  <div className="row flex">
+                    <div className="input-field">
                        <input placeholder="Ingredient" id="recipe-search" type="text" className="validate" value={this.state.searchText} onChange= {this.onSearch} />
                           {/* onChange={event => setString(event.target.value) */}
         
-                        <label htmlFor="recipe-search">Search for recipe here</label>
+                        <label className="search">Search for recipe here</label>
                         <button className="btn waves-effect waves-light" type="submit" name="action" onClick={this.onSubmit}>FIND ME Recipe<i className="material-icons right">send</i></button>
                        </div>
                       </div>
@@ -104,16 +83,20 @@ class Search extends React.Component {
 
           <div className="card">
             <div className="card-image waves-effect waves-block waves-light">
-              <img className="activator" src={result.thumbnail} alt ="Not available"/>
-                <p>Click on image to see the ingredients.</p>
+              <img className="activator" src={result.thumbnail} width="100pt" height="200pt" alt ="Not available"/>
+               {/* <h6>click image for ingredients</h6> */}
+                {/* <h6>{result.title}</h6> */}
              </div>
             <div className="card-content">
-             <span className="card-title activator grey-text text-darken-4">{result.title}<i class="material-icons right">more_vert</i></span>
-               <p><a href={result.href}>Click link to get recipe</a></p>
+             <span className="card-title activator grey-text text-darken-4">{result.title}</span>
+               {/* <h5>{result.title}</h5> */}
+           
             </div>
            <div className="card-reveal">
             <span className="card-title grey-text text-darken-4">{result.title}<i className="material-icons right">close</i></span>
-              <p>Ingredients: {result.ingredients}</p>
+              <h5>Ingredients: </h5>
+              <h6>{result.ingredients}</h6>
+              <h6><a href={result.href}>Click link to get recipe</a></h6>
            </div>
           </div>
           </div>
@@ -122,9 +105,6 @@ class Search extends React.Component {
       }
        </div>
        </div>
-       {/* <div>
-    {this.state.hasError && (this.state.info == null) && <h3> {this.state.hasError}</h3>}
-       </div> */}
       </React.Fragment>
      )
     }

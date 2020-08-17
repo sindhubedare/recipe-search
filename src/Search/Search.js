@@ -73,15 +73,15 @@ class Search extends React.Component {
              console.log(searchTerm);
             let response = await fetch(`https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=${searchTerm}&q=omelet&p=1`);
             let data = await response.json();
-            console.log(data);
-            console.log(data.results);
+            // console.log(data);
+            // console.log(data.results);
             const result = data.results;
             const resultLength = data.results.length;
-            console.log("length" , data.results.length);
-            console.log(result);
+            // console.log("length" , data.results.length);
+            // console.log(result);
 
             //display only 1st item title of the array
-            console.log(data.results[0].title);
+            // console.log(data.results[0].title);
 
 
             if(resultLength > 0){
@@ -94,6 +94,8 @@ class Search extends React.Component {
         }
     
  render (){
+   let response = this.state.displayResults;
+   console.log(response);
      return(
          <React.Fragment>
    <div className="row">

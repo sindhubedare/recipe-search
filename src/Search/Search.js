@@ -126,8 +126,10 @@ class Search extends React.Component {
                  </form>
               </div>
         
-       <div>
-       {/* //mapping the results to display on screen */}
+       
+      {/* mapping the results to display on screen  */}
+        <div className= "conatiner">
+        <div className= "row" style={{display: "flex", flexWrap: "wrap"}}>
        {response.length && response.map((result, id) => {
          return (
           //  <div className="poster-results">
@@ -142,6 +144,8 @@ class Search extends React.Component {
           //    </li>
           //   </ul>
           //  </div>
+          <div className= "col s12 m4 l2">
+
           <div className="card">
             <div className="card-image waves-effect waves-block waves-light">
               <img className="activator" src={result.thumbnail} alt ="Not available"/>
@@ -156,9 +160,11 @@ class Search extends React.Component {
               <p>{result.ingredients}</p>
            </div>
           </div>
+          </div>
          )
        })
       }
+       </div>
        </div>
        {/* <div>
     {this.state.hasError && (this.state.info == null) && <h3> {this.state.hasError}</h3>}

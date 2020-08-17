@@ -130,18 +130,32 @@ class Search extends React.Component {
        {/* //mapping the results to display on screen */}
        {response.length && response.map((result, id) => {
          return (
-           <div className="poster-results">
-              {/* <ul key={id} className= "lists-display"> */}
-            <ul className= "lists-display">
-             <li  className="results-li">
+          //  <div className="poster-results">
+          //     {/* <ul key={id} className= "lists-display"> */}
+          //   <ul className= "lists-display">
+          //    <li  className="results-li">
                 
-                <h5> Recipe Name: {result.title}</h5>
-                <img src={result.thumbnail} alt= "Not available" />
-                <h6>Ingredients: {result.ingredients}</h6>
-                <a href = {result.href}>Click link to get recipe</a>
-             </li>
-            </ul>
+          //       <h5> Recipe Name: {result.title}</h5>
+          //       <img src={result.thumbnail} alt= "Not available" />
+          //       <h6>Ingredients: {result.ingredients}</h6>
+          //       <a href = {result.href}>Click link to get recipe</a>
+          //    </li>
+          //   </ul>
+          //  </div>
+          <div className="card">
+            <div className="card-image waves-effect waves-block waves-light">
+              <img className="activator" src={result.thumbnail} alt ="Not available"/>
+                <p>Click on image to see the ingredients.</p>
+             </div>
+            <div className="card-content">
+             <span className="card-title activator grey-text text-darken-4">{result.title}<i class="material-icons right">more_vert</i></span>
+               <p><a href={result.href}>Click link to get recipe</a></p>
+            </div>
+           <div className="card-reveal">
+            <span className="card-title grey-text text-darken-4">{result.title}<i className="material-icons right">close</i></span>
+              <p>{result.ingredients}</p>
            </div>
+          </div>
          )
        })
       }
@@ -154,3 +168,7 @@ class Search extends React.Component {
     }
 }
 export default Search;
+
+
+
+

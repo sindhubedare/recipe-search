@@ -25,7 +25,8 @@ class Search extends React.Component {
             //  console.log(this.state.searchText);
              const searchTerm = this.state.searchText;
             //  console.log(searchTerm);
-            let response = await fetch(`https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=${searchTerm}&p=1`);
+            // let response = await fetch(`https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=${searchTerm}&p=1`);
+            let response = await fetch(`https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=${searchTerm}`);
             let data = await response.json();
             // console.log(data);
             // console.log(data.results);
@@ -64,7 +65,7 @@ class Search extends React.Component {
        
       {/* mapping the results to display on screen  */}
         <div className= "conatiner">
-        <div className= "row" style={{display: "flex", flexWrap: "wrap"}}>
+        <div className= "row flex" style={{display: "flex", flexWrap: "wrap"}}>
        {response.length && response.map((result, id) => {
          return (
           //  <div className="poster-results">
@@ -79,7 +80,7 @@ class Search extends React.Component {
           //    </li>
           //   </ul>
           //  </div>
-          <div className= "col s5 m5 l5">
+          <div className= "col s12 m6">
 
           <div className="card">
             <div className="card-image waves-effect waves-block waves-light">

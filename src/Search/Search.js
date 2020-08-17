@@ -1,47 +1,3 @@
-// import React, {useState} from 'react';
-// import Button from './Button';
-
-
-// export default (setSearchTerm) => {
-//   const [string, setString] = useState("")
-
-//   const onSubmit = (event) => {
-//      event.preventDefault();
-//      console.log(event.target.value);
-//      setSearchTerm(string);
-//   }
-//   const onSearch = (event) => {
-//   event.preventDefault();
-//   console.log(event.target.value);
-//   setString(event.target.value);
-//   }
-
-  
-//     return(
-//   <React.Fragment>
-//   <div className="row">
-//   {/* <form className="col s12" onSubmit={e => onSubmit(e)}> */}
-//   <form className="col s12" >
-//     <div className="row">
-//       <div className="input-field col s6">
-//         <input placeholder="Ingredient" id="recipe-search" type="text" className="validate" value={string} onChange= {e => onSearch(e)} />
-//     {/* onChange={event => setString(event.target.value) */}
-        
-//         <label htmlFor="recipe-search">Search for recipe here</label>
-//         <button onClick={(e) => onSubmit(e)}>Submit</button>
-//        </div>
-//       </div>
-//     </form>
-//   </div>
-//   <div className= "submit-button">
-//     <Button />
-//   </div>
-//   </React.Fragment>
-//     )
-//     }
-
-
-
 import React from 'react';
 // import Error from './Error';
 // import Searchbar from './Searchbar';
@@ -59,12 +15,12 @@ class Search extends React.Component {
 
     onSubmit = (event) => {
              event.preventDefault();
-             console.log(event.target.value);
+            //  console.log(event.target.value);
            this.getRecipes()
           }
       onSearch = (event) => {
           event.preventDefault();
-          console.log(event.target.value);
+          // console.log(event.target.value);
           this.setState({searchText: event.target.value})
           }
        getRecipes = async () => {
@@ -72,14 +28,14 @@ class Search extends React.Component {
             //  console.log(this.state.searchText);
              const searchTerm = this.state.searchText;
             //  console.log(searchTerm);
-            let response = await fetch(`https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=${searchTerm}&p=1`);
+            let response = await fetch(`https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=${searchTerm}&from=1&to=10`);
             let data = await response.json();
             // console.log(data);
             // console.log(data.results);
             const result = data.results;
             const resultLength = data.results.length;
             // console.log("length" , data.results.length);
-            console.log(result);
+            // console.log(result);
 
             //display only 1st item title of the array
             // console.log(data.results[0].title);
@@ -144,7 +100,7 @@ class Search extends React.Component {
           //    </li>
           //   </ul>
           //  </div>
-          <div className= "col s12 m4 l2">
+          <div className= "col s5 m5 l5">
 
           <div className="card">
             <div className="card-image waves-effect waves-block waves-light">

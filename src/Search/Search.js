@@ -7,7 +7,7 @@ class Search extends React.Component {
       displayResults: "",
       searchText: "",
       resultLength: "",
-      info: "",
+      errorMessage: "",
     };
   }
 

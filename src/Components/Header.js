@@ -7,7 +7,10 @@ function Header () {
         <div className="card-panel white-text teal lighten-2">
             <h4>RECIPE SEARCH</h4>
         </div>
+        <div className="food-pass">
         <Foodpass />
+        </div>
+        
         </div>
     )
 }

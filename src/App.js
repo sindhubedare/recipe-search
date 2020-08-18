@@ -16,7 +16,6 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
-import Search from "./Search/Search";
 import HowTo from "./Components/HowTo";
 import Recipe from "./Content/Recipe";
 import Home from "./Components/Home";

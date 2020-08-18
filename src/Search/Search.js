@@ -14,6 +14,7 @@ class Search extends React.Component {
   onSubmit = (event) => {
     event.preventDefault();
     //  console.log(event.target.value);
+    alert("hi");
     this.getRecipes();
   };
   onSearch = (event) => {
@@ -56,13 +57,14 @@ class Search extends React.Component {
               <div className="input-field">
                 <label className="search">Search for recipe here</label>
                 <input
-                  placeholder="Add upto 2 ingredients using comma"
+                
                   id="recipe-search"
                   type="text"
-                  className="validate"
+                 
                   value={this.state.searchText}
                   onChange={this.onSearch}
                 />
+                 {/* className="validate"   placeholder="Add upto 2 ingredients using comma" */}
                 {/* onChange={event => setString(event.target.value) */}
 
                 <label className="search">Search for recipe here</label>
@@ -88,20 +90,9 @@ class Search extends React.Component {
             {response.length &&
               response.map((result, id) => {
                 return (
-                  //  <div className="poster-results">
-                  //     {/* <ul key={id} className= "lists-display"> */}
-                  //   <ul className= "lists-display">
-                  //    <li  className="results-li">
-
-                  //       <h5> Recipe Name: {result.title}</h5>
-                  //       <img src={result.thumbnail} alt= "Not available" />
-                  //       <h6>Ingredients: {result.ingredients}</h6>
-                  //       <a href = {result.href}>Click link to get recipe</a>
-                  //    </li>
-                  //   </ul>
-                  //  </div>
                   <div className="col s12 m6">
                     <div className="card">
+                      {/* <div> */}
                       <div className="card-image waves-effect waves-block waves-light">
                         <img
                           className="activator"

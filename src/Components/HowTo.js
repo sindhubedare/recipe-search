@@ -7,7 +7,6 @@ export default function HowTo(){
         <React.Fragment>
             <div className= "how-to">
             <h3>Recipe finder</h3>
-            <p>
              <ul>
                  <li>Can type upto 2 ingredients with comma "," separting them</li>
                  <li>Click on "Find me recipe" button</li>
@@ -15,7 +14,7 @@ export default function HowTo(){
                  <li>Click on the link for detailed recipe</li>
                  <li>Cook and Enjoy!!</li>
              </ul>
-             </p>
+             
             </div>
         </React.Fragment>
     )

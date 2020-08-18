@@ -6,7 +6,7 @@ export default function HowTo(){
     return(
         <React.Fragment>
             <div className= "how-to">
-            <p><h3>Input Parameters</h3>
+            <p><h3>Recipe finder</h3>
              <ul>
                  <li>Can type upto 2 ingredients with common separting them</li>
                  <li>Click on Find me recipe button</li>

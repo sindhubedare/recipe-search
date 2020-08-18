@@ -23,3 +23,9 @@ text-align: center;
   height: 100t;
   width: 100pt;
 }
+
+.how-to{
+  background-image: url("https://i.pinimg.com/originals/a2/18/f7/a218f772a59aad480fcded754fa01824.gif") ;
+  height: 250pt;
+  width: 100vw;
+}

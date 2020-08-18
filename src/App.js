@@ -20,13 +20,14 @@ import {BrowserRouter as Router, Switch, Link, Route} from 'react-router-dom'
 import Search from './Search/Search';
 import HowTo from './Components/HowTo';
 import Recipe from './Content/Recipe';
+import Foodpass from "./Components/Foodpass";
 
 function App() {
   return (
 
   <Router>
      <nav>
-         <ul className="lists-display">
+         <ul className="card-panel white-text teal lighten-2">
          <li>  <Link to = '/'>Home </Link> </li>
              <li>
                 <Link to ='/Recipe'> Recipe</Link>
@@ -43,7 +44,7 @@ function App() {
              <Route exact path="/Recipe"  component={Recipe}/>
              {/* <Route path="/GenerateMeme" component={GenerateMeme}/> */}
              <Route path="/HowTo" component={HowTo} />
-             {/* <Route path="/" component={About} />   */}
+             <Route path="/" component={Home} />  
         </Switch>
    
   </Router>

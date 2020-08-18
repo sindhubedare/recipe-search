@@ -9,6 +9,8 @@ export default function HowTo(){
             <p><h3>Input Parameters</h3>
              <ul>
                  <li>Can type upto 2 ingredients with common separting them</li>
+                 <li>Click on Find me recipe button</li>
+                 <li>Click on the recipe you like to see the ingredients required to make that recipe</li>
              </ul>
              </p>
             </div>

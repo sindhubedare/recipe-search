@@ -41,6 +41,7 @@ class Search extends React.Component {
       this.setState({ displayResults: result });
     } else {
       this.setState({ errorMessage: "No Data" });
+      // console.log(errorMessage);
     }
   };
 

@@ -1,13 +1,14 @@
 import React from "react";
-import Header from '../Components/Header';
+// import Header from '../Components/Header';
 import Search from '../Search/Search';
-
+import Foodpass from '../Components/Foodpass';
 
 export default () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Search />
+      <Foodpass />
     </div>
   );
 };

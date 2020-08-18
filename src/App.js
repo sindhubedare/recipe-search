@@ -1,22 +1,7 @@
-// import React from "react";
-// import "./App.css";
-// import Header from "./Components/Header";
-// import Search from "./Search/Search";
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <Header />
-//       <Search />
-//     </div>
-//   );
-// }
-// export default App;
-
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
-import HowTo from "./Components/HowTo";
+import Instructions from "./Components/Instructions";
 import Recipe from "./Content/Recipe";
 import Home from "./Components/Home";
 
@@ -29,7 +14,7 @@ function App() {
             <Link to="/">Home </Link>{" "}
           </li>
           <li>
-            <Link to="/HowTo"> Instructions</Link>
+            <Link to="/Instructions"> Instructions</Link>
           </li>
           <li>
             <Link to="/Recipe"> Recipe</Link>
@@ -38,8 +23,7 @@ function App() {
       </nav>
       <Switch>
         <Route exact path="/Recipe" component={Recipe} />
-        {/* <Route path="/GenerateMeme" component={GenerateMeme}/> */}
-        <Route path="/HowTo" component={HowTo} />
+        <Route path="/Instructions" component={Instructions} />
         <Route path="/" component={Home} />
       </Switch>
     </Router>

@@ -131,3 +131,8 @@ class Search extends React.Component {
   }
 }
 export default Search;
+
+
+
+
+//https://css-tricks.com/fetching-data-in-react-using-react-async/

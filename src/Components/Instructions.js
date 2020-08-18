@@ -2,7 +2,7 @@ import React from 'react';
 
 //Stateless function to display the information of the website
 
-export default function HowTo(){
+export default function Instructions(){
     return(
         <React.Fragment>
             <div className= "how-to">

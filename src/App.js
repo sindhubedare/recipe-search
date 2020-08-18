@@ -19,6 +19,7 @@ import "./App.css";
 import {BrowserRouter as Router, Switch, Link, Route} from 'react-router-dom'
 import Search from './Search/Search';
 import HowTo from './Components/HowTo';
+import Recipe from './Content/Recipe';
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
          <ul className="lists-display">
          <li>  <Link to = '/'>Home </Link> </li>
              <li>
-                <Link to ='/Search'> Search</Link>
+                <Link to ='/Recipe'> Recipe</Link>
              </li>
              {/* <li>
                  <Link to = '/GenerateMeme'>Create Captions for Meme</Link>
@@ -39,7 +40,7 @@ function App() {
       </nav>
         <Switch>
  
-             <Route exact path="/Search"  component={Search}/>
+             <Route exact path="/Recipe"  component={Recipe}/>
              {/* <Route path="/GenerateMeme" component={GenerateMeme}/> */}
              <Route path="/HowTo" component={HowTo} />
              {/* <Route path="/" component={About} />   */}

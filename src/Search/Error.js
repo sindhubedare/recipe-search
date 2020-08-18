@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Error extends React.Component{
+class Error extends React.Component {
 
     componentDidCatch(error, info) {
         console.log(error);

@@ -5,9 +5,10 @@
 .validate{
   text-align: center;
 }
-.input-field{
-  align-content: center;
-}
+/* .input-field{
+  display: block;
+  text-align: center;
+} */
 
 .card-panel{
   height: 60pt;

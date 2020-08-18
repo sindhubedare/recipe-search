@@ -51,8 +51,9 @@ class Search extends React.Component {
          <React.Fragment>
              <div className="row flex">
                 <form className="col s12" >
-                  <div className="row flex">
+                  <div>
                     <div className="input-field">
+                    <label className="search">Search for recipe here</label>
                        <input placeholder="Add upto 2 ingredients using comma" id="recipe-search" type="text" className="validate" value={this.state.searchText} onChange= {this.onSearch} />
                           {/* onChange={event => setString(event.target.value) */}
         

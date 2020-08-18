@@ -14,7 +14,7 @@ class Search extends React.Component {
   onSubmit = (event) => {
     event.preventDefault();
     //  console.log(event.target.value);
-    alert("hi");
+    // alert("hi");
     this.getRecipes();
   };
   onSearch = (event) => {

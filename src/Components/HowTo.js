@@ -7,10 +7,9 @@ export default function HowTo(){
         <React.Fragment>
             <div className= "how-to">
             <p><h3>Input Parameters</h3>
-                <strong>How many ingredients?</strong> <span className="text-color">upto 2 ingredients </span><br/>
-                <strong>Comma ","</strong> <span className="text-color">"," between 2 ingredients</span><br/>
-                <strong></strong> <span className="text-color">Top text for the meme </span>&nbsp;&nbsp;
-                <strong> text1:</strong> <span className="text-color">botton text for the meme </span>
+             <ul>
+                 <li>Can type upto 2 ingredients with common separting them</li>
+             </ul>
              </p>
             </div>
         </React.Fragment>

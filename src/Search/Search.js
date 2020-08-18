@@ -7,6 +7,7 @@ class Search extends React.Component {
       displayResults: "",
       searchText: "",
       resultLength: "",
+      info: "",
     };
   }
 
@@ -130,6 +131,7 @@ class Search extends React.Component {
                   </div>
                 );
               })}
+              
           </div>
         </div>
       </React.Fragment>

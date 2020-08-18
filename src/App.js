@@ -20,7 +20,7 @@ import {BrowserRouter as Router, Switch, Link, Route} from 'react-router-dom'
 import Search from './Search/Search';
 import HowTo from './Components/HowTo';
 import Recipe from './Content/Recipe';
-import Foodpass from "./Components/Foodpass";
+import Home from "./Components/Home";
 
 function App() {
   return (

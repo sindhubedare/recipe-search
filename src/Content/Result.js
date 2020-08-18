@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter as Router, Switch, Link, Route} from 'react-router-dom'
 
 // export default () => {
 //     return (
@@ -28,7 +29,7 @@ export default function Result() {
           <Switch>
    
                <Route exact path="/Search"  component={Search}/>
-               <Route path="/GenerateMeme" component={GenerateMeme}/>
+               {/* <Route path="/GenerateMeme" component={GenerateMeme}/> */}
                <Route path="/HowTo" component={HowTo} />
                <Route path="/" component={About} />  
           </Switch>

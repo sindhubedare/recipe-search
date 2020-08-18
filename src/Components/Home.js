@@ -1,8 +1,9 @@
 import React from 'react';
+import "../App.css";
 function Home (){
     return (
-        <div>
-            <img src= "https://i.graphicmama.com/blog/wp-content/uploads/2016/12/06085706/food.gif" alt= "Home"/>
+        <div className= "home-gif">
+            <img src= "https://cdn.dribbble.com/users/208061/screenshots/2663861/movin-food.gif" alt= "Home"/>
         </div>
     )
 }

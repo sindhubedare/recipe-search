@@ -82,7 +82,7 @@ class Search extends React.Component {
           //    </li>
           //   </ul>
           //  </div>
-          // <div className= "col s12 m6">
+          <div className= "col s12 m6">
 
           <div className="card">
             <div className="card-image waves-effect waves-block waves-light">

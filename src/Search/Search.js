@@ -26,7 +26,7 @@ class Search extends React.Component {
             //  console.log(this.state.searchText);
              const searchTerm = this.state.searchText;
             //  console.log(searchTerm);
-            // let response = await fetch(`https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=${searchTerm}&p=1`);
+            let response = await fetch(`https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=${searchTerm}&p=1`);
             let response = await fetch(`https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=${searchTerm}`);
             let data = await response.json();
             // console.log(data);

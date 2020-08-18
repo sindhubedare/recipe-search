@@ -1,10 +1,10 @@
 import React from 'react';
 
-class Error extends React.Component {
-
-    componentDidCatch(error, info) {
-        console.log(error);
-    }
+// stateless function that displays error message when there is no search result
+export default function ErrorMessage(props) {
+    return (
+        <div className="error-message">
+         <h1>   No Result found </h1>
+        </div>
+    )
 }
-
-export default Error;

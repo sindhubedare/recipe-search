@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 import Instructions from "./Components/Instructions";
 import Recipe from "./Content/Recipe";
 import Home from "./Components/Home";
+import Reviews from "./Components/Reviews";
 
 function App() {
   return (
@@ -19,12 +20,16 @@ function App() {
           <li>
             <Link to="/Recipe"> Recipe</Link>
           </li>
+          <li>
+            <Link to="/Reviews"> Feedback</Link>
+          </li>
         </ul>
       </nav>
       <Switch>
         <Route exact path="/Recipe" component={Recipe} />
         <Route path="/Instructions" component={Instructions} />
         <Route path="/" component={Home} />
+        <Route path="/Feedback" component={Reviews} />
       </Switch>
     </Router>
   );

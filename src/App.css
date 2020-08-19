@@ -35,6 +35,7 @@ text-align: center;
   width: 100vw;
   margin-top: -8pt;
   text-align: left;
+  font-family: Arial, Helvetica, sans-serif; 
 }
 
 .container {
@@ -45,4 +46,12 @@ text-align: center;
   color: grey;
   margin-top: 20pt;
   text-align: left;
+}
+
+.feed-back{
+  background-image: url("https://static.dribbble.com/users/436306/screenshots/6026974/foodline.gif");
+  color: white;
+  width: 100vw;
+  height: 500pt;
+  font-style: italic;
 }

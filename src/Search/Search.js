@@ -1,4 +1,5 @@
 import React from 'react';
+import Error from './Error'
 
 class Search extends React.Component {
   constructor(props) {
@@ -40,8 +41,9 @@ class Search extends React.Component {
     // console.log(result);
     if (resultLength > 0) {
       this.setState({ displayResults: result });
+      this.setState({errorMessage: false})
     } else {
-      this.setState({ errorMessage: "No Data" });
+      this.setState({ errorMessage: true });
       // console.log(errorMessage);
     }
   };
@@ -87,7 +89,7 @@ class Search extends React.Component {
             className="row flex"
             style={{ display: "flex", flexWrap: "wrap" }}
           >
-            {response.length &&
+            {response.length>0 &&
               response.map((result, id) => {
                 return (
                   <div className="col s12 m6">
@@ -120,11 +122,14 @@ class Search extends React.Component {
                         </h6>
                       </div>
                     </div>
+                  
                   </div>
                 );
               })}
               
           </div>
+            <div>  {response.length<0 && <Error/>}</div>
+                 {/* <div>  {this.state.errorMessage && <Error/>}</div> */}
         </div>
       </React.Fragment>
     );

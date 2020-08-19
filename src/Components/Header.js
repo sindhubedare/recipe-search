@@ -25,12 +25,12 @@
 class Header extends React.Component{
  constructor(props) {
      super(props);
-     this.header = "Find me"
+     this.header = "Lets get cooking!!"
  }
  render (){
      return(
-     <div>
-         {this.header};
+     <div className="cooking">
+         {this.header}
      </div>
      );
  }

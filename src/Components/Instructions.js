@@ -5,8 +5,10 @@ import React from 'react';
 export default function Instructions(){
     return(
         <React.Fragment>
-            <div className= "how-to">
+            <div>
+            <div className="recipe-text">
             <h3>Recipe finder</h3>
+            <div className= "how-to">
              <ul>
                  <li>Can type upto 2 ingredients with comma "," separting them</li>
                  <li>Click on "Find me recipe" button</li>
@@ -14,7 +16,8 @@ export default function Instructions(){
                  <li>Click on the link for detailed recipe</li>
                  <li>Cook and Enjoy!!</li>
              </ul>
-             
+             </div>
+            </div>
             </div>
         </React.Fragment>
     )

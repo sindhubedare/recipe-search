@@ -33,12 +33,12 @@ class Search extends React.Component {
       `https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=${searchTerm}`
     );
     let data = await response.json();
-    console.log(data);
-    console.log(data.results);
+    // console.log(data);
+    // console.log(data.results);
     const result = data.results;
     var resultLength = data.results.length;
-    console.log("length" , data.results.length);
-    console.log(result);
+    // console.log("length" , data.results.length);
+    // console.log(result);
     if (resultLength > 0) {
       this.setState({ displayResults: result });
       this.setState({errorMessage: false})

@@ -11,12 +11,12 @@ Anybody who wants to cook and looking for new recipes with ingredient word searc
 2. Header.js
 
 #Stateless Components
-Error.js
-Feedback.js
-Home.js
-Instruction.js
-Recipe.js
-Puseudocode.js
+1. Error.js
+2. Feedback.js
+3. Home.js
+4. Instruction.js
+5. Recipe.js
+6. Puseudocode.js
 
 ##Reference
 https://www.youtube.com/watch?v=ZnmStqH2dVY&list=PLE9cyLFRZmXImA_DU5scscm2BqW6txsQo&index=6

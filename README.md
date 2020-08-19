@@ -1,4 +1,4 @@
-Recipe-search
+## Recipe-search
 
 ## API used
 http://www.recipepuppy.com/api/

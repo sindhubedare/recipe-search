@@ -52,7 +52,7 @@ class Search extends React.Component {
   render() {
     let response = this.state.displayResults;
     //  console.log(response);
-    console.log(this.state.errorMessage);
+    // console.log(this.state.errorMessage);
     return (
       <React.Fragment>
         <div className="row flex">

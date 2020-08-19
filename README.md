@@ -6,7 +6,7 @@ http://www.recipepuppy.com/api/
 ## Target user 
 Anybody who wants to cook and looking for new recipes with ingredient word search
 
-##Stateful Components
+## Stateful Components
 1. Search.js
 2. Header.js
 

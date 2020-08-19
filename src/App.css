@@ -39,3 +39,9 @@ text-align: center;
 .container {
   background-color: #0097a7 ;
 }
+
+.cooking{
+  color: grey;
+  margin-top: 20pt;
+  text-align: left;
+}

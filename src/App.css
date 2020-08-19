@@ -22,11 +22,17 @@ text-align: center;
 .home-gif{
   /* align-content: center; */
   background-image: url("https://cdn.dribbble.com/users/208061/screenshots/2663861/movin-food.gif") ;
-  margin-top: 10pt;
+  /* margin-top: 10pt; */
   height: 350pt;
   width: 100vw;
-  justify-content: center;
+
   
+}
+.text{
+ font-style: italic;
+ justify-content: center;
+ float: right;
+ /* border: solid black; */
 }
 
 .how-to{

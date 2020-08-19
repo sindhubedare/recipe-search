@@ -33,17 +33,18 @@ class Search extends React.Component {
       `https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=${searchTerm}`
     );
     let data = await response.json();
-    // console.log(data);
-    // console.log(data.results);
+    console.log(data);
+    console.log(data.results);
     const result = data.results;
-    const resultLength = data.results.length;
-    // console.log("length" , data.results.length);
-    // console.log(result);
+    var resultLength = data.results.length;
+    console.log("length" , data.results.length);
+    console.log(result);
     if (resultLength > 0) {
       this.setState({ displayResults: result });
       this.setState({errorMessage: false})
     } else {
       this.setState({ errorMessage: true });
+      // resultLength = 0;
       // console.log(errorMessage);
     }
   };
@@ -51,6 +52,7 @@ class Search extends React.Component {
   render() {
     let response = this.state.displayResults;
     //  console.log(response);
+    console.log(this.state.errorMessage);
     return (
       <React.Fragment>
         <div className="row flex">
@@ -90,6 +92,9 @@ class Search extends React.Component {
             style={{ display: "flex", flexWrap: "wrap" }}
           >
             {response.length>0 &&
+                              
+                        // this.state.errorMessage ?  <Error/>:
+                         
               response.map((result, id) => {
                 return (
                   <div className="col s12 m6">
@@ -124,19 +129,20 @@ class Search extends React.Component {
                     </div>
                   
                   </div>
-                );
-              })}
+              
+                ); 
+              }) }
               
           </div>
-            <div>  {response.length<0 && <Error/>}</div>
+            {/* <div>  {response.length<=0 && <Error/>}</div> */}
                  {/* <div>  {this.state.errorMessage && <Error/>}</div> */}
         </div>
+         <div>  {this.state.errorMessage && <Error/>}</div>
       </React.Fragment>
     );
   }
 }
 export default Search;
-
 
 
 

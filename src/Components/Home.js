@@ -4,7 +4,7 @@ function Home() {
   return (
     <div>
       <div>
-        <h5 className="text"> Welcome to Sindhu's recipe search</h5>
+        <h5 className="text"> Sindhu's recipe search</h5>
       </div>
 
       {/* <img src= "https://cdn.dribbble.com/users/208061/screenshots/2663861/movin-food.gif" alt= "Home" width="200pt" height="200pt"/> */}

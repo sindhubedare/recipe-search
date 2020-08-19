@@ -10,7 +10,7 @@ Anybody who wants to cook and looking for new recipes with ingredient word searc
 1. Search.js
 2. Header.js
 
-#Stateless Components
+# Stateless Components
 1. Error.js
 2. Feedback.js
 3. Home.js
@@ -18,7 +18,7 @@ Anybody who wants to cook and looking for new recipes with ingredient word searc
 5. Recipe.js
 6. Puseudocode.js
 
-##Reference
+## Reference
 https://www.youtube.com/watch?v=ZnmStqH2dVY&list=PLE9cyLFRZmXImA_DU5scscm2BqW6txsQo&index=6
 https://stackoverflow.com/questions/59048729/how-to-redirect-to-another-class-component-page-in-reactjs
 https://materializecss.com/about.html

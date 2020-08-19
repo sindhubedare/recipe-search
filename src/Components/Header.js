@@ -1,5 +1,5 @@
 import React from 'react';
-import Foodpass from './Foodpass';
+// import Foodpass from './Foodpass';
 
 function Header () {
     return(

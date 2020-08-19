@@ -5,7 +5,7 @@ import Search from '../Search/Search'
 export default () => {
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <Search />
     </div>
   );

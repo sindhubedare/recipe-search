@@ -7,12 +7,12 @@ export default function Instructions(){
         <React.Fragment>
             <div>
             <div className="recipe-text">
-            <h3>Recipe finder</h3>
+            <h3>Recipe Finder</h3>
             <div className= "how-to">
              <ul>
                  <li>Can type upto 2 ingredients with comma "," separting them</li>
                  <li>Click on "Find me recipe" button</li>
-                 <li>Click on the recipe card you like to see the ingredients required to make that recipe</li>
+                 <li>Click on the recipe card you like to reveal the ingredients required to make that recipe</li>
                  <li>Click on the link for detailed recipe</li>
                  <li>Cook and Enjoy!!</li>
              </ul>

@@ -1,4 +1,6 @@
 ## Recipe-search
+## Netlify link - https://optimistic-bartik-a86075.netlify.app/   
+## Please note- Please hover over top left to see the Navbar. Having issues after deployment in firebase & netlify both.
 
 ## API used
 http://www.recipepuppy.com/api/

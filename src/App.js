@@ -10,25 +10,34 @@ function App() {
   return (
     <Router>
       <nav>
-      <div className="nav-wrapper blue lighten-1">
+        <div className="nav-wrapper blue lighten-1">
           <div className="card-panel teal lighten 2">
-        <ul>
-      
-          <li>
-            <Link to="/"><span className="white-text text-darken-2">Home</span> </Link>{" "}
-        
-          </li>
-          <li>
-            <Link to="/Instructions"><span className="white-text text-darken-2"> Instructions</span></Link>
-          </li>
-          <li>
-            <Link to="/Recipe"><span className="white-text text-darken-2"> Recipe</span></Link>
-          </li>
-          <li>
-            <Link to="/Feedback"><span className="white-text text-darken-2"> Feedback</span></Link>
-          </li>
-        </ul>
-        </div>
+            <ul>
+              <li>
+                <Link to="/">
+                  <span className="white-text text-darken-2">Home</span>{" "}
+                </Link>{" "}
+              </li>
+              <li>
+                <Link to="/Instructions">
+                  <span className="white-text text-darken-2">
+                    {" "}
+                    Instructions
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/Recipe">
+                  <span className="white-text text-darken-2"> Recipe</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/Feedback">
+                  <span className="white-text text-darken-2"> Feedback</span>
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <Switch>
@@ -36,7 +45,6 @@ function App() {
         <Route exact path="/Instructions" component={Instructions} />
         <Route exact path="/Feedback" component={Feedback} />
         <Route exact path="/" component={Home} />
-        
       </Switch>
     </Router>
   );

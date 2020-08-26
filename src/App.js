@@ -10,20 +10,28 @@ function App() {
   return (
     <Router>
       <nav>
-        <ul className="card-panel white-text teal lighten-2">
+      <div className="nav-wrapper blue lighten-1">
+          <div className="card-panel teal lighten 2">
+  
+        {/* <ul className="card-panel black-text teal lighten 2"> */}
+        <ul>
+        {/* <ul className= "navbar"> */}
           <li>
-            <Link to="/">Home </Link>{" "}
+            <Link to="/"><span className="white-text text-darken-2">Home</span> </Link>{" "}
+        
           </li>
           <li>
-            <Link to="/Instructions"> Instructions</Link>
+            <Link to="/Instructions"><span className="white-text text-darken-2"> Instructions</span></Link>
           </li>
           <li>
-            <Link to="/Recipe"> Recipe</Link>
+            <Link to="/Recipe"><span className="white-text text-darken-2"> Recipe</span></Link>
           </li>
           <li>
-            <Link to="/Feedback"> Feedback</Link>
+            <Link to="/Feedback"><span className="white-text text-darken-2"> Feedback</span></Link>
           </li>
         </ul>
+        </div>
+        </div>
       </nav>
       <Switch>
         <Route exact path="/Recipe" component={Recipe} />

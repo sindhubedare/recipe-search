@@ -12,10 +12,8 @@ function App() {
       <nav>
       <div className="nav-wrapper blue lighten-1">
           <div className="card-panel teal lighten 2">
-  
-        {/* <ul className="card-panel black-text teal lighten 2"> */}
         <ul>
-        {/* <ul className= "navbar"> */}
+      
           <li>
             <Link to="/"><span className="white-text text-darken-2">Home</span> </Link>{" "}
         

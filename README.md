@@ -1,6 +1,4 @@
-## Recipe-Search
-## Netlify Link
-https://clever-wilson-4cc1ea.netlify.app/
+## Recipe-search
 
 ## API used
 http://www.recipepuppy.com/api/

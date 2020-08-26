@@ -1,4 +1,4 @@
-## Recipe-search
+## Recipe-Search
 ## Netlify Link
 https://clever-wilson-4cc1ea.netlify.app/
 
